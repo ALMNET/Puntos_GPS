@@ -1,6 +1,6 @@
 #include <stdint.h>
 
-
+#define EBUS_GPS_ALARM_NEW_FILENAME		"ALRMCFG3_NEW.bin"
 #define EBUS_GPS_ALARM_CFG_FILENAME		"ALRMCFG3.bin"
 
 // Arreglar

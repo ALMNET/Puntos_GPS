@@ -8,7 +8,10 @@
 
 
 int main () {
-   FILE *fp;
+   FILE *fp, *puntosAEscribir;
+
+   unsigned char nombreArchivo[32];
+
    unsigned char buffer[6*512];
 
    //tsAlarmPointsDescriptor Puntos[6]; //= {
@@ -91,9 +94,19 @@ int main () {
          break;
    }
 
-		
+	Puntos[5].PuntoGPS[i].Latitude = -37.32835578011083;
+   Puntos[5].PuntoGPS[i].Longitude = -59.145798155200865;
 
+   
    fclose(fp);
+
+   //if (puntosAEscribir = fopen(EBUS_GPS_ALARM_NEW_FILENAME, "w+"))
+
+   if (puntosAEscribir = fopen("ALRMCFG3_NEW.bin", "w+"))
+   {
+      fwrite(Puntos, sizeof(Puntos), 1, puntosAEscribir);
+      fclose(puntosAEscribir);
+   }
 
    
    return(0);
