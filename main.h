@@ -4,7 +4,7 @@ typedef uint8_t  u8;
 typedef uint16_t  u16;
 typedef uint32_t  u32;
 
-typedef struct __attribute__((packed))
+typedef struct 
 {
 
        u16          Mach_ID;
@@ -27,13 +27,13 @@ typedef struct __attribute__((packed))
        u16			VTabla_Tarifas;
 } StatUVP;
 
-typedef struct __attribute__((packed))
+typedef struct //__attribute__((packed))
 {
 	float Latitude;      // 4 Bytes
 	float Longitude;     // 4 Bytes
 }tsGPSLatLong;              // 8 Bytes
 
-typedef struct __attribute__((packed))
+typedef struct //__attribute__((packed))
 {
 	u16 Linea;			// 2 Bytes: Línea para la que se aplicarán las alarmas
 	u16 UmbralDistancia;		// 2 Bytes: radio en metros alrededor de cada punto GPS que dispara la alarma +- 10% histéresis
