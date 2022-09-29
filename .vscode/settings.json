@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "combigenerator.h": "c",
+        "gpsprocessing.h": "c"
+    }
+}
